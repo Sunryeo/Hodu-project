@@ -76,20 +76,19 @@
             const container = document.getElementById('img-container');
             button.addEventListener('click', () => {
                 const newUl = document.createElement('ul');
-                newUl.style.cssText = "display: flex; width: 1278px; height: 378px; margin-top: 85px; margin-left: 337px;gap: 72px;";
+                newUl.setAttribute('class', 'img-frame-2');
+
                 for(let i = 0; i < 3; i++) {
                     const tagList = ['funny', 'cute', 'orange', 'jellybean', "sleepy", "tired", "outside", "grass", "hovercat", "hug", "huge", "programmer", "proud", "psychedelic", "puffy"];
                     const randomInt = Math.floor(Math.random() * tagList.length);
                     const newLi = document.createElement("li");
-                    newLi.style.cssText = 'list-style: none;'
 
                     const newImage = document.createElement("img");
                     const requestUrl = 'https://cataas.com/cat'
                     const requestQuery = `?tag=${tagList[randomInt]}&width=378&height=378`;
                     newImage.src = requestUrl + requestQuery;
-                    
                     newImage.alt = "";
-                    newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px; filter: drop-shadow(10px 10px 6px #c3c3c3);';
+                    newImage.setAttribute('class', 'list-image');
                     
                     newLi.appendChild(newImage);
                     newUl.appendChild(newLi);
