@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-style.css" media="all and (min-width:180px) and (max-width:768px)">
+</head>
+<script>
+    function scrollTopFixed(){
+        window.scrollTo(902, 0)
+    }
+</script>
+<body>
+    <div class="top">
+        <img src="https://velog.velcdn.com/images/elma98/post/0d4ed5b1-ff32-42c4-9ea9-6ef8e570644f/image.png" alt="" class="cat_1"> <!--메인 고양이 이미지-->
+        <nav>
+            <img src="https://velog.velcdn.com/images/elma98/post/1c33b45d-7ad9-4dd4-bbe9-2863abdea57c/image.svg" alt="" class="logo-top"> <!--로고 이미지-->
+            <section class="top-nav-element">
+                <button>Home</button>
+                <button>About</button>
+                <button>Support</button>
+            </section>
+            <button class="download-btn">Download</button>
+        </nav>
+        <p class="top-text-box-main">Lorem Ipsum is simply dummy text of the printing and</p>
+        <p class="top-text-box-sub">Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown</p>
+        <button class="download-btn">Download</button>
+    </div>
+    <div class="middle">
+        <img src="https://velog.velcdn.com/images/elma98/post/173c2ef8-d435-48e6-bc1c-0d9f50e22f7d/image.png" alt="" class="img_4"> <!--고양이 img_4-->
+        <div>
+            <p class="middle-text-box-main">Lorem Ipsum is simply
+                dummy text of the printing and dummy text</p>
+            <p class="middle-text-box-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    <h2>dummy text of the printing and dummy</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+    <section id="img-container">
+        <ul class="img-frame-1">
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/080b5bba-ee0f-4c03-9443-a66bfc77ffd8/image.png" alt="">
+            </li>
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/4bf4b84e-2a99-47f0-b950-6308001a9459/image.png" alt="">
+            </li>
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/15598ad1-ab97-4b74-b261-5f798d1f98ca/image.png" alt="">
+            </li>
+        </ul> <!--고양이 이미지 첫 섹션 3개-->
+        <ul class="img-frame-2">
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/0960583f-1352-42e5-9545-7615092624f2/image.png" alt="">
+            </li>
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/688b2b57-3922-4c11-b7cf-ac06c52187bb/image.png" alt="">
+            </li>
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/702562a9-b07e-46e3-b0f0-9639aa4c65fc/image.png" alt="">
+            </li>
+        </ul> <!--고양이 이미지 두 번째 섹션 3개-->
+    </section>
+    <section class="low-text-frame">
+        <p>Continue exploring HODU</p>
+        <button id="show-more-btn">Show more</button> <!--이미지 추가 로딩-->
+        <!-- <script>
+            const button = document.getElementById('show-more-btn');
+            const container = document.getElementById('img-container');
+            button.addEventListener('click', () => {
+                const newUl = document.createElement('ul');
+                newUl.style.cssText = "display: flex; width: 1278px; height: 378px; margin-top: 85px; margin-left: 337px;gap: 72px;";
+                for(let i = 0; i < 3; i++) {
+                    const tagList = ['funny', 'cute', 'orange', 'jellybean', "sleepy", "tired", "outside", "grass", "hovercat", "hug", "huge", "programmer", "proud", "psychedelic", "puffy"];
+                    const randomInt = Math.floor(Math.random() * tagList.length);
+                    const newLi = document.createElement("li");
+                    newLi.style.cssText = 'list-style: none;'
+
+                    const newImage = document.createElement("img");
+                    const requestUrl = 'https://cataas.com/cat'
+                    const requestQuery = `?tag=${tagList[randomInt]}&width=378&height=378`;
+                    newImage.src = requestUrl + requestQuery;
+                    
+                    newImage.alt = "";
+                    newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px; filter: drop-shadow(10px 10px 6px #c3c3c3);';
+                    
+                    newLi.appendChild(newImage);
+                    newUl.appendChild(newLi);
+                    container.appendChild(newUl);
+                }
+            })
+        </script> -->
+        <script>
+            const button = document.getElementById('show-more-btn');
+            const container = document.getElementById('img-container');
+            button.addEventListener('click', () => {
+                const newUl = document.createElement('ul');
+                newUl.style.cssText = "display: flex; width: 1278px; height: 378px; margin-top: 85px; margin-left: 337px;gap: 72px;";
+                const randomInt = Math.floor(Math.random() * 10);
+
+                fetch(`https://picsum.photos/v2/list?page=${randomInt}&limit=3`)
+                .then((res) => {
+                    res = res.json();
+                    return res;
+                })
+                .then((data) => {
+                    for(let i = 0; i < 3; i++) {
+                    const newLi = document.createElement("li");
+                    newLi.style.cssText = 'list-style: none;'
+
+                    const newImage = document.createElement("img");
+                    newImage.src = data[i].download_url;
+                    newImage.alt = "";
+                    newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px; filter: drop-shadow(10px 10px 6px #c3c3c3);';
+                    
+                    newLi.appendChild(newImage);
+                    newUl.appendChild(newLi);
+                }
+                    container.appendChild(newUl);
+                })
+                .catch((e) => {
+                    throw(e);
+                })
+            })
+        </script>
+    </section>
+    <div></div>
+    <h3>Where you'll be</h3>
+    <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+    <!-- <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.2671261224914!2d126.5714548!3d33.4423464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350cfdb22ad3cce3%3A0x1321aebb880d1b1!2z7KCc7KO87Yq567OE7J6Q7LmY64-EIOygnOyjvOyLnCDssqjri6jroZwgMzMw!5e0!3m2!1sko!2skr!4v1716189111838!5m2!1sko!2skr" width="1278" height="520" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> -->
+    <div id="map"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b91b6b5266e001399bcbd8bb32b9ef9c"></script>
+    <script>
+        const mapContainer = document.getElementById('map'), 
+            mapOption = { 
+                center: new kakao.maps.LatLng(33.442552, 126.571519),
+                level: 3
+            };
+        const map = new kakao.maps.Map(mapContainer, mapOption);
+    </script> 
+    <div class="subscribe">
+        <section class="sub-text-group"> <!--text group-->
+            <p>Subscribe to our Blog post</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textt</p>
+        </section>
+        <section class="sub-mail">
+            <img src="https://velog.velcdn.com/images/elma98/post/49b808a9-3e25-40fa-89dd-887aac2426a6/image.svg" alt=""> <!--이메일 아이콘-->
+            <input type="text" name="" id="" placeholder="Enter your e-mail address">
+            <button id="modal-open-btn">Subscribe</button>
+            <div id="modal-container" class="hidden">
+                <div id="modal-content">
+                    <img src="https://velog.velcdn.com/images/elma98/post/cc48f19b-a277-4a1b-83b8-bfced4736291/image.png" alt="">
+                    <p id="modal-content-main">Thank you!</p>
+                    <p id="modal-content-sub">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                    <button id="modal-close-btn">OK! I Love HODU</button>
+                </div>
+            </div>
+            <script>
+                const modalOpenButton = document.getElementById('modal-open-btn');
+                const modalCloseButton = document.getElementById('modal-close-btn');
+                const modal = document.getElementById('modal-container');
+
+                modalOpenButton.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                });
+
+                modalCloseButton.addEventListener('click', () => {
+                modal.classList.add('hidden');
+                }); 
+            </script>
+        </section> <!--enter e-mail-->
+    </div>
+    <img src="https://velog.velcdn.com/images/elma98/post/0e2ae5b7-f8bb-4139-a03b-2cd16cf7a721/image.png" alt=""> <!--하단 왕큰 고양이 이미지-->
+    <button type="button" onclick="scrollTopFixed()" class="scroll-up-btn">
+        <img src="https://velog.velcdn.com/images/elma98/post/3a9aec01-424c-44f1-8d48-56e451ae76f1/image.png" alt="">
+    </button>
+    <footer>
+        <img src="https://velog.velcdn.com/images/elma98/post/1c33b45d-7ad9-4dd4-bbe9-2863abdea57c/image.svg" alt="" class="logo-bottom"> <!--footer logo-->
+        <section class="icon-group">
+            <img src="https://velog.velcdn.com/images/elma98/post/6d999276-78f1-45b5-a49f-7b61ddd72281/image.png" alt="blog">
+            <img src="https://velog.velcdn.com/images/elma98/post/2f163a64-27c6-4bf2-86e9-ac832c68f554/image.png" alt="insta">
+            <img src="https://velog.velcdn.com/images/elma98/post/7bb21c31-3aea-4b2c-abbf-0bd4ebb1fcd9/image.png" alt="facebook">
+            <img src="https://velog.velcdn.com/images/elma98/post/e51357cf-246d-479b-b445-7590a7a7cf60/image.png" alt="youtube">
+        </section> <!--우측 아이콘 그룹-->
+    </footer>
+</body>
+</html>

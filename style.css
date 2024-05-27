@@ -1,0 +1,492 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cat_1 {
+  position: absolute;
+  width: 415px;
+  height: 766px;
+  top: 134px;
+  left: 1185px;
+}
+
+.top {
+  width: 1920px;
+  height: 900px;
+  background-color: #f2e9d8;
+}
+
+nav {
+  display: flex;
+  width: 1920px;
+  height: 102px;
+}
+
+.logo-top {
+  width: 130px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 320px;
+}
+
+.top-nav-element {
+  display: flex;
+  width: 205px;
+  height: 20px;
+  margin-top: 41px;
+  margin-left: 756px;
+  margin-bottom: 41px;
+  gap: 30px;
+}
+
+.top-nav-element button {
+  background-color: #f2e9d8;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  border: 0;
+}
+
+nav > .download-btn {
+  width: 140px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #d97652;
+  margin-left: 49px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.top-text-box-main {
+  width: 695px;
+  height: 120px;
+  margin-top: 200px;
+  margin-left: 320px;
+  font-family: "Pretendard-Regular";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.top-text-box-sub {
+  width: 420px;
+  height: 86px;
+  margin-top: 40px;
+  margin-left: 320px;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.download-btn {
+  background-color: #d97652;
+  width: 140px;
+  height: 50px;
+  border-radius: 40px;
+  margin-top: 40px;
+  margin-left: 320px;
+  font-family: "Pretendard-Regular";
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.09px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.img_4 {
+  width: 660px;
+  height: 390px;
+  border-radius: 30px;
+  margin-top: 80px;
+  margin-left: 320px;
+}
+
+.middle {
+  display: flex;
+}
+
+.middle > div {
+  margin-top: 172px;
+  margin-left: 110px;
+}
+
+.middle-text-box-main {
+  width: 510px;
+  height: 135px;
+  font-family: "Pretendard-Regular";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}
+
+.middle-text-box-sub {
+  width: 510px;
+  height: 40px;
+  margin-top: 30px;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+h2 {
+  width: 875px;
+  height: 60px;
+  margin-top: 120px;
+  margin-left: 523px;
+  font-family: "Pretendard-Regular";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  color: #d97652;
+}
+
+h2 + p {
+  width: 710px;
+  height: 42px;
+  margin-top: 40px;
+  margin-left: 605px;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.img-frame-1 {
+  display: flex;
+  width: 1278px;
+  height: 378px;
+  margin-top: 88px;
+  margin-left: 320px;
+  gap: 72px;
+}
+
+/* .img-frame-1 li {
+  list-style: none;
+} */
+
+.img-frame-1 li {
+  list-style: none;
+  width: 378px;
+  height: 378px;
+  border-radius: 30px;
+}
+
+.img-frame-2 {
+  display: flex;
+  width: 1278px;
+  height: 378px;
+  margin-top: 72px;
+  margin-left: 320px;
+  gap: 72px;
+}
+
+.img-frame-2 li {
+  list-style: none;
+  width: 378px;
+  height: 378px;
+  border-radius: 30px;
+}
+
+.low-text-frame p {
+  width: 290px;
+  height: 30px;
+  margin-top: 100px;
+  margin-left: 815px;
+  font-family: "Pretendard-Regular";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+#show-more-btn {
+  cursor: pointer;
+  width: 143px;
+  height: 50px;
+  margin-top: 28px;
+  margin-left: 888.5px;
+  border-radius: 40px;
+  background-color: #d97652;
+  color: #ffffff;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  border: 0;
+}
+
+.low-text-frame + div {
+  width: 1278px;
+  height: 1px;
+  margin-top: 80px;
+  margin-left: 320px;
+  background-color: #c4c4c4;
+}
+
+h3 {
+  width: 263px;
+  height: 45px;
+  margin-top: 68px;
+  margin-left: 320px;
+  font-family: "Pretendard-Regular";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: #000000;
+}
+
+h3 + p {
+  width: 395px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 320px;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #606367;
+}
+
+#map {
+  width: 1278px;
+  height: 520px;
+  margin-top: 48px;
+  margin-left: 320px;
+}
+
+.subscribe {
+  display: flex;
+  position: absolute;
+  width: 1280px;
+  height: 200px;
+  margin-top: 81px;
+  margin-left: 320px;
+  border-radius: 30px;
+  background-color: #263140;
+}
+
+.sub-text-group {
+  width: 471px;
+  height: 99px;
+  position: absolute;
+}
+
+.sub-text-group > p:first-child {
+  position: absolute;
+  top: 50px;
+  left: 58px;
+  width: 448px;
+  height: 45px;
+  font-family: "Pretendard-Regular";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.sub-text-group > p:last-child {
+  width: 471px;
+  height: 36px;
+  margin-top: 113px;
+  margin-left: 58px;
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #f2e9d8;
+}
+
+.sub-mail {
+  display: flex;
+  width: 530px;
+  height: 60px;
+  position: absolute;
+  top: 69px;
+  left: 692px;
+  border-radius: 60px;
+  background-color: #ffffff;
+}
+
+.sub-mail > img {
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+  margin-left: 28px;
+}
+
+.sub-mail > input {
+  width: 184px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 16px;
+  border: 0;
+}
+
+.sub-mail > button {
+  width: 135px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 137px;
+  border-radius: 40px;
+  background-color: #d97652;
+  border: 0;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subscribe + img {
+  width: 1920px;
+  height: 340px;
+  margin-top: 181px;
+}
+
+.scroll-up-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 1846px;
+  top: -69px;
+  border: 0;
+  background-color: #f2e9d899;
+  opacity: 80%;
+}
+
+.scroll-up-btn:hover {
+  background-image: url("https://velog.velcdn.com/images/elma98/post/14359421-4299-40dc-b545-ce09523967cc/image.png");
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 1846px;
+  top: -69px;
+  border: 0;
+}
+
+footer {
+  display: flex;
+  width: 1920px;
+  height: 160px;
+}
+
+.logo-bottom {
+  width: 226px;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 320px;
+}
+
+.icon-group {
+  display: flex;
+  width: 228px;
+  height: 42px;
+  margin-top: 25px;
+  margin-left: 826px;
+  gap: 20px;
+}
+
+.icon-group img {
+  width: 42px;
+  height: 42px;
+}
+
+#modal-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#modal-container.hidden {
+  display: none;
+}
+
+#modal-content {
+  background-image: url(https://velog.velcdn.com/images/elma98/post/5733b27e-5182-485d-8370-20721517629d/image.png);
+  width: 600px;
+  height: 400px;
+  border-radius: 30px;
+}
+
+#modal-content > img {
+  width: 110px;
+  height: 112px;
+  margin-top: 60px;
+  margin-left: 245px;
+}
+
+#modal-content-main {
+  width: 212px;
+  height: 46px;
+  margin-top: 24px;
+  margin-left: 194px;
+  font-family: "Pretendard-Regular";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+  color: #d97652;
+}
+
+#modal-content-sub {
+  width: 365px;
+  height: 18px;
+  margin-top: 12px;
+  margin-left: 108px;
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+#modal-close-btn {
+  width: 183px;
+  height: 50px;
+  margin-top: 38px;
+  margin-left: 205px;
+  border-radius: 40px;
+  border: 0;
+  background-color: #d97652;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}

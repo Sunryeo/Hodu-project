@@ -1,0 +1,219 @@
+@media screen and (max-width: 390px) {
+  .top {
+    width: 390px;
+    height: 794px;
+  }
+
+  nav {
+    width: 390px;
+    height: 76px;
+  }
+
+  .top-nav-element {
+    display: none;
+    background-image: url("https://velog.velcdn.com/images/elma98/post/de96a421-b1de-4d97-9e74-b22e2f2d7b22/image.svg");
+  }
+
+  .top-nav-element + button {
+    display: none;
+  }
+
+  .logo-top {
+    margin-top: 24px;
+    margin-left: 20px;
+    width: 92px;
+    height: 28px;
+  }
+
+  .top-text-box-main {
+    margin-top: 40px;
+    margin-left: 67px;
+    width: 251px;
+    height: 90px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .top-text-box-sub {
+    margin-top: 30px;
+    margin-left: 57px;
+    width: 270px;
+    height: 98px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .download-btn {
+    margin-top: 30px;
+    margin-left: 135px;
+  }
+
+  .cat_1 {
+    position: absolute;
+    width: 197px;
+    height: 362px;
+    top: 434px;
+    left: 98px;
+  }
+
+  .img_4 {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 326px;
+    height: 190px;
+  }
+
+  .middle {
+    display: inline;
+  }
+
+  .middle > div {
+    margin-top: 40px;
+    margin-left: 32px;
+  }
+
+  .middle-text-box-main {
+    width: 326px;
+    height: 90px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .middle-text-box-sub {
+    margin-top: 20px;
+    width: 326px;
+    height: 36px;
+  }
+
+  h2 {
+    margin-top: 60px;
+    margin-left: 32px;
+    width: 326px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  h2 + p {
+    width: 326px;
+    height: 102px;
+    margin-top: 30px;
+    margin-left: 32px;
+  }
+
+  .img-frame-1 {
+    display: inline;
+  }
+
+  .img-frame-1 li {
+    width: 326px;
+    height: 326px;
+  }
+
+  .img-frame-1 img {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 326px;
+    height: 326px;
+  }
+
+  .img-frame-2 {
+    display: inline;
+  }
+
+  .img-frame-2 li {
+    width: 326px;
+    height: 326px;
+  }
+
+  .img-frame-2 img {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 326px;
+    height: 326px;
+  }
+
+  .low-text-frame p {
+    margin-top: 60px;
+    margin-left: 86px;
+    width: 218px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  #show-more-btn {
+    margin-top: 28px;
+    margin-left: 123.5px;
+  }
+
+  .low-text-frame + div {
+    width: 326px;
+    height: 1px;
+    margin-top: 60px;
+    margin-left: 32px;
+  }
+
+  h3 {
+    margin-top: 40px;
+    margin-left: 32px;
+    width: 175px;
+    height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  h3 + p {
+    margin-top: 16px;
+    margin-left: 32px;
+    width: 326px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  #map {
+    width: 326px;
+    height: 132px;
+    margin-top: 28px;
+    margin-left: 32px;
+  }
+
+  .subscribe {
+    display: inline;
+    width: 326px;
+    height: 348px;
+    margin-top: 40px;
+    margin-left: 32px;
+  }
+
+  .sub-text-group {
+    width: 0;
+    height: 0;
+  }
+
+  .sub-text-group p:first-child {
+    width: 187px;
+    height: 60px;
+    margin-top: 36px;
+    margin-left: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+  }
+}
