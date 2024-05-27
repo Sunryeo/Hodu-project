@@ -275,7 +275,6 @@ h3 + p {
   height: 520px;
   margin-top: 48px;
   margin-left: 320px;
-  z-index: -1;
 }
 
 .subscribe {
