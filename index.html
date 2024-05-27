@@ -4,17 +4,10 @@
     <title>HODU</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile-style.css" media="all and (min-width:180px) and (max-width:768px)">
 </head>
-<script>
-    function scrollTopFixed(){
-        window.scrollTo(902, 0)
-    }
-</script>
 <body>
     <div class="top">
         <img src="https://velog.velcdn.com/images/elma98/post/0d4ed5b1-ff32-42c4-9ea9-6ef8e570644f/image.png" alt="" class="cat_1"> <!--메인 고양이 이미지-->
@@ -71,63 +64,6 @@
     <section class="low-text-frame">
         <p>Continue exploring HODU</p>
         <button id="show-more-btn">Show more</button> <!--이미지 추가 로딩-->
-        <!-- <script>
-            const button = document.getElementById('show-more-btn');
-            const container = document.getElementById('img-container');
-            button.addEventListener('click', () => {
-                const newUl = document.createElement('ul');
-                newUl.setAttribute('class', 'img-frame-2');
-
-                for(let i = 0; i < 3; i++) {
-                    const tagList = ['funny', 'cute', 'orange', 'jellybean', "sleepy", "tired", "outside", "grass", "hovercat", "hug", "huge", "programmer", "proud", "psychedelic", "puffy"];
-                    const randomInt = Math.floor(Math.random() * tagList.length);
-                    const newLi = document.createElement("li");
-
-                    const newImage = document.createElement("img");
-                    const requestUrl = 'https://cataas.com/cat'
-                    const requestQuery = `?tag=${tagList[randomInt]}&width=378&height=378`;
-                    newImage.src = requestUrl + requestQuery;
-                    newImage.alt = "";
-                    newImage.setAttribute('class', 'list-image');
-                    
-                    newLi.appendChild(newImage);
-                    newUl.appendChild(newLi);
-                    container.appendChild(newUl);
-                }
-            })
-        </script> -->
-        <script>
-            const button = document.getElementById('show-more-btn');
-            const container = document.getElementById('img-container');
-            button.addEventListener('click', () => {
-                const newUl = document.createElement('ul');
-                newUl.setAttribute('class', 'img-frame-2');
-                const randomInt = Math.floor(Math.random() * 10);
-
-                fetch(`https://picsum.photos/v2/list?page=${randomInt}&limit=3`)
-                .then((res) => {
-                    res = res.json();
-                    return res;
-                })
-                .then((data) => {
-                    for(let i = 0; i < 3; i++) {
-                    const newLi = document.createElement("li");
-
-                    const newImage = document.createElement("img");
-                    newImage.src = data[i].download_url;
-                    newImage.alt = "";
-                    newImage.setAttribute('class', 'list-image');
-                    
-                    newLi.appendChild(newImage);
-                    newUl.appendChild(newLi);
-                }
-                    container.appendChild(newUl);
-                })
-                .catch((e) => {
-                    throw(e);
-                })
-            })
-        </script>
     </section>
     <div></div>
     <h3>Where you'll be</h3>
@@ -137,14 +73,6 @@
     </div> -->
     <div id="map"></div>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b91b6b5266e001399bcbd8bb32b9ef9c"></script>
-    <script>
-        const mapContainer = document.getElementById('map'), 
-            mapOption = { 
-                center: new kakao.maps.LatLng(33.442552, 126.571519),
-                level: 3
-            };
-        const map = new kakao.maps.Map(mapContainer, mapOption);
-    </script> 
     <div class="subscribe">
         <section class="sub-text-group"> <!--text group-->
             <p>Subscribe to our Blog post</p>
@@ -162,19 +90,6 @@
                     <button id="modal-close-btn">OK! I Love HODU</button>
                 </div>
             </div>
-            <script>
-                const modalOpenButton = document.getElementById('modal-open-btn');
-                const modalCloseButton = document.getElementById('modal-close-btn');
-                const modal = document.getElementById('modal-container');
-
-                modalOpenButton.addEventListener('click', () => {
-                modal.classList.remove('hidden');
-                });
-
-                modalCloseButton.addEventListener('click', () => {
-                modal.classList.add('hidden');
-                }); 
-            </script>
         </section> <!--enter e-mail-->
     </div>
     <img src="https://velog.velcdn.com/images/elma98/post/0e2ae5b7-f8bb-4139-a03b-2cd16cf7a721/image.png" alt=""> <!--하단 왕큰 고양이 이미지-->
@@ -190,5 +105,6 @@
             <img src="https://velog.velcdn.com/images/elma98/post/e51357cf-246d-479b-b445-7590a7a7cf60/image.png" alt="youtube">
         </section> <!--우측 아이콘 그룹-->
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -347,7 +347,8 @@ h3 + p {
   border: 0;
 }
 
-.sub-mail > button {
+#modal-open-btn {
+  cursor: pointer;
   width: 135px;
   height: 50px;
   margin-top: 5px;

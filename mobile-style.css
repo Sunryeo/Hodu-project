@@ -311,8 +311,8 @@
   }
 
   .subscribe + img {
-    width: 390px;
-    height: 240px;
+    width: 100%;
+    height: 340px;
     object-fit: cover;
     margin-top: 300px;
     margin-left: 10px;
