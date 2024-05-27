@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>HODU</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,24 +47,24 @@
     <section id="img-container">
         <ul class="img-frame-1">
             <li>
-                <img src="https://velog.velcdn.com/images/elma98/post/080b5bba-ee0f-4c03-9443-a66bfc77ffd8/image.png" alt="">
+                <img src="https://velog.velcdn.com/images/elma98/post/080b5bba-ee0f-4c03-9443-a66bfc77ffd8/image.png" alt="" class="list-image">
             </li>
             <li>
-                <img src="https://velog.velcdn.com/images/elma98/post/4bf4b84e-2a99-47f0-b950-6308001a9459/image.png" alt="">
+                <img src="https://velog.velcdn.com/images/elma98/post/4bf4b84e-2a99-47f0-b950-6308001a9459/image.png" alt="" class="list-image">
             </li>
             <li>
-                <img src="https://velog.velcdn.com/images/elma98/post/15598ad1-ab97-4b74-b261-5f798d1f98ca/image.png" alt="">
+                <img src="https://velog.velcdn.com/images/elma98/post/15598ad1-ab97-4b74-b261-5f798d1f98ca/image.png" alt="" class="list-image">
             </li>
         </ul> <!--고양이 이미지 첫 섹션 3개-->
         <ul class="img-frame-2">
             <li>
-                <img src="https://velog.velcdn.com/images/elma98/post/0960583f-1352-42e5-9545-7615092624f2/image.png" alt="">
+                <img src="https://velog.velcdn.com/images/elma98/post/0960583f-1352-42e5-9545-7615092624f2/image.png" alt="" class="list-image">
             </li>
             <li>
-                <img src="https://velog.velcdn.com/images/elma98/post/688b2b57-3922-4c11-b7cf-ac06c52187bb/image.png" alt="">
+                <img src="https://velog.velcdn.com/images/elma98/post/688b2b57-3922-4c11-b7cf-ac06c52187bb/image.png" alt="" class="list-image">
             </li>
             <li>
-                <img src="https://velog.velcdn.com/images/elma98/post/702562a9-b07e-46e3-b0f0-9639aa4c65fc/image.png" alt="">
+                <img src="https://velog.velcdn.com/images/elma98/post/702562a9-b07e-46e3-b0f0-9639aa4c65fc/image.png" alt="" class="list-image">
             </li>
         </ul> <!--고양이 이미지 두 번째 섹션 3개-->
     </section>
@@ -101,7 +102,7 @@
             const container = document.getElementById('img-container');
             button.addEventListener('click', () => {
                 const newUl = document.createElement('ul');
-                newUl.style.cssText = "display: flex; width: 1278px; height: 378px; margin-top: 85px; margin-left: 337px;gap: 72px;";
+                newUl.setAttribute('class', 'img-frame-2');
                 const randomInt = Math.floor(Math.random() * 10);
 
                 fetch(`https://picsum.photos/v2/list?page=${randomInt}&limit=3`)
@@ -112,12 +113,11 @@
                 .then((data) => {
                     for(let i = 0; i < 3; i++) {
                     const newLi = document.createElement("li");
-                    newLi.style.cssText = 'list-style: none;'
 
                     const newImage = document.createElement("img");
                     newImage.src = data[i].download_url;
                     newImage.alt = "";
-                    newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px; filter: drop-shadow(10px 10px 6px #c3c3c3);';
+                    newImage.setAttribute('class', 'list-image');
                     
                     newLi.appendChild(newImage);
                     newUl.appendChild(newLi);

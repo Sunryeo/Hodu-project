@@ -1,4 +1,4 @@
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   .top {
     width: 390px;
     height: 794px;
@@ -113,32 +113,16 @@
     display: inline;
   }
 
-  .img-frame-1 li {
-    width: 326px;
-    height: 326px;
-  }
-
-  .img-frame-1 img {
-    margin-top: 32px;
-    margin-left: 32px;
-    width: 326px;
-    height: 326px;
-  }
-
   .img-frame-2 {
     display: inline;
   }
 
-  .img-frame-2 li {
-    width: 326px;
-    height: 326px;
-  }
-
-  .img-frame-2 img {
+  .list-image {
     margin-top: 32px;
     margin-left: 32px;
     width: 326px;
     height: 326px;
+    filter: drop-shadow(10px 10px 6px #c3c3c3);
   }
 
   .low-text-frame p {
@@ -209,11 +193,128 @@
   .sub-text-group p:first-child {
     width: 187px;
     height: 60px;
-    margin-top: 36px;
-    margin-left: 32px;
+    margin-top: -10px;
+    margin-left: -20px;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     text-align: left;
+  }
+
+  .sub-text-group p:last-child {
+    width: 262px;
+    height: 72px;
+    margin-top: 116px;
+    margin-left: 32px;
+  }
+
+  .sub-mail {
+    /* display: inline; */
+    /* margin-top: 30px;
+    margin-left: 32px; */
+    width: 262px;
+    height: 40px;
+    position: absolute;
+    top: 218px;
+    left: 32px;
+  }
+
+  .sub-mail > img {
+    margin-top: 8px;
+    margin-left: 16px;
+  }
+
+  .sub-mail > input {
+    margin-top: 12px;
+    margin-left: 14px;
+    width: 144px;
+    height: 16px;
+  }
+
+  #modal-open-btn {
+    margin-top: 60px;
+    margin-left: -51px;
+    width: 114px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .scroll-up-btn {
+    display: none;
+  }
+
+  #modal-content {
+    background-image: url("https://velog.velcdn.com/images/elma98/post/5733b27e-5182-485d-8370-20721517629d/image.png");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  #modal-content > img {
+    width: 60px;
+    height: 62px;
+    margin-top: 40px;
+    margin-left: 120px;
+  }
+
+  #modal-content-main {
+    margin-top: 24px;
+    margin-left: 87px;
+    width: 126px;
+    height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  #modal-content-sub {
+    margin-top: 10px;
+    margin-left: 56px;
+    width: 189px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  #modal-close-btn {
+    width: 158px;
+    height: 40px;
+    margin-top: 28px;
+    margin-left: 80px;
+  }
+
+  .logo-bottom {
+    width: 112px;
+    height: 34px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .icon-group {
+    width: 176px;
+    height: 32px;
+    display: inline;
+    margin-top: 112px;
+    margin-left: -110px;
+  }
+
+  .icon-group img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .subscribe + img {
+    width: 390px;
+    height: 240px;
+    object-fit: cover;
+    margin-top: 300px;
+    margin-left: 10px;
   }
 }
